@@ -4,4 +4,5 @@ As Asset Editor code is still private, I've decided to make this repository to h
 
 ## Useful links
 
+- [Wiki](https://github.com/iBowie/Asset-Editor-Community/wiki)
 - [Localization Repository](https://github.com/iBowie/BowieD.Unturned.AssetEditor.Localization)

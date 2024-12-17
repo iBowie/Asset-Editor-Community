@@ -1,0 +1,590 @@
+﻿{
+  "version": 8,
+  "name": "Quest Example",
+  "notes": "",
+  "settings": {
+    "minIdRange": 0,
+    "maxIdRange": 65535,
+    "watermark": "",
+    "defaultUnityVersion": "UNITY_2021_LTS",
+    "disabledErrors": []
+  },
+  "languageDefault": "English",
+  "languageCurrent": "English",
+  "flags": [],
+  "tree": {
+    "type": "folder",
+    "guid": "ed4c7a7f-1d32-4008-8bb3-52945112d9f4",
+    "name": "Quest Example",
+    "isExpanded": true,
+    "children": [
+      {
+        "type": "asset",
+        "guid": "174c041b-3c61-4651-b377-e5f73de7c563",
+        "asset": {
+          "type": "npc/quest",
+          "guid": "440ca8a0-653e-47ac-82e1-4a943330d604",
+          "id": 2010,
+          "name": "Quest",
+          "editorComment": null,
+          "assetBundleVersion": 5,
+          "editorMarker": "None",
+          "unityBundleLocation": "",
+          "excludeFromMasterBundle": false,
+          "enableShaderConsolidation": null,
+          "ignoreNPOT": false,
+          "ignoreTexRW": false,
+          "bypassIdLimit": false,
+          "masterBundleOverride": "",
+          "bundleOverridePath": "",
+          "questName": {
+            "pairs": [
+              {
+                "language": "English",
+                "text": "Quest"
+              }
+            ]
+          },
+          "questDesc": {
+            "pairs": [
+              {
+                "language": "English",
+                "text": "Gather sticks for a forager."
+              }
+            ]
+          },
+          "conditions": [
+            {
+              "type": "item",
+              "text": {
+                "pairs": [
+                  {
+                    "language": "English",
+                    "text": ""
+                  }
+                ]
+              },
+              "shouldReset": true,
+              "uiRequirementIndicies": "",
+              "logic": "GREATER_THAN_OR_EQUAL_TO",
+              "itemId": "46218740-c256-475b-87db-c6a2e9a1fb19",
+              "amount": 5
+            }
+          ],
+          "rewards": [
+            {
+              "type": "experience",
+              "text": {
+                "pairs": [
+                  {
+                    "language": "English",
+                    "text": ""
+                  }
+                ]
+              },
+              "grantDelay": null,
+              "grantDelayApplyWhenInterrupted": false,
+              "value": 10
+            }
+          ],
+          "abandonmentRewards": []
+        }
+      },
+      {
+        "type": "asset",
+        "guid": "8c83e57b-c92d-49eb-a262-76d5aa4c0e20",
+        "asset": {
+          "type": "object/npc",
+          "guid": "789f5792-5118-4e92-aa9a-6295888fafe9",
+          "id": 0,
+          "name": "Quest Giver",
+          "editorComment": null,
+          "assetBundleVersion": 5,
+          "editorMarker": "None",
+          "unityBundleLocation": "",
+          "excludeFromMasterBundle": false,
+          "enableShaderConsolidation": null,
+          "ignoreNPOT": false,
+          "ignoreTexRW": false,
+          "bypassIdLimit": false,
+          "masterBundleOverride": "",
+          "bundleOverridePath": "",
+          "objectName": {
+            "pairs": [
+              {
+                "language": "English",
+                "text": "Quest Giver"
+              }
+            ]
+          },
+          "holidayRestriction": "NONE",
+          "christmasRedirect": null,
+          "halloweenRedirect": null,
+          "isGore": false,
+          "excludeFromSatelliteCapture": null,
+          "shouldLoadNavInEditor": null,
+          "shouldLoadNavOnServer": null,
+          "conditions": [],
+          "characterName": {
+            "pairs": [
+              {
+                "language": "English",
+                "text": "Quest Giver"
+              }
+            ]
+          },
+          "dialogueId": "a72ceffd-ac71-45e8-8b31-8aa8a4a2c0f7",
+          "equipment": {
+            "primary": 0,
+            "secondary": 0,
+            "tertiary": 0,
+            "slot": "None"
+          },
+          "skinColor": {
+            "r": 217,
+            "g": 202,
+            "b": 180,
+            "a": 255
+          },
+          "hairColor": {
+            "r": 71,
+            "g": 56,
+            "b": 38,
+            "a": 255
+          },
+          "defaultOutfit": {
+            "hat": 0,
+            "mask": 0,
+            "glasses": 0,
+            "shirt": 0,
+            "vest": 0,
+            "pants": 0,
+            "backpack": 0
+          },
+          "christmasOutfit": {
+            "hat": 0,
+            "mask": 0,
+            "glasses": 0,
+            "shirt": 0,
+            "vest": 0,
+            "pants": 0,
+            "backpack": 0
+          },
+          "halloweenOutfit": {
+            "hat": 0,
+            "mask": 0,
+            "glasses": 0,
+            "shirt": 0,
+            "vest": 0,
+            "pants": 0,
+            "backpack": 0
+          },
+          "isLefty": false,
+          "face": 0,
+          "hair": 0,
+          "beard": 0,
+          "pose": {
+            "pose": "Stand",
+            "lean": 0.0,
+            "pitch": 90.0,
+            "headOffset": 0.0
+          },
+          "playerKnowsNameFlagID": null
+        }
+      },
+      {
+        "type": "asset",
+        "guid": "753b1a21-8cd7-4802-950e-432cb5be4c93",
+        "asset": {
+          "type": "npc/dialogue",
+          "guid": "a72ceffd-ac71-45e8-8b31-8aa8a4a2c0f7",
+          "id": 2005,
+          "name": "Quest Welcome",
+          "editorComment": null,
+          "assetBundleVersion": 5,
+          "editorMarker": "None",
+          "unityBundleLocation": "",
+          "excludeFromMasterBundle": false,
+          "enableShaderConsolidation": null,
+          "ignoreNPOT": false,
+          "ignoreTexRW": false,
+          "bypassIdLimit": false,
+          "masterBundleOverride": "",
+          "bundleOverridePath": "",
+          "messages": [
+            {
+              "conditions": [],
+              "rewards": [],
+              "pages": [
+                {
+                  "text": {
+                    "pairs": [
+                      {
+                        "language": "English",
+                        "text": "Hello, <name_char>!"
+                      }
+                    ]
+                  },
+                  "conditions": [],
+                  "rewards": []
+                }
+              ],
+              "prev": 0,
+              "faceOverride": null,
+              "visibleResponses": [],
+              "showNoResponses": false
+            }
+          ],
+          "responses": [
+            {
+              "conditions": [
+                {
+                  "type": "quest",
+                  "text": {
+                    "pairs": [
+                      {
+                        "language": "English",
+                        "text": ""
+                      }
+                    ]
+                  },
+                  "shouldReset": false,
+                  "uiRequirementIndicies": "",
+                  "logic": "EQUAL",
+                  "questId": "440ca8a0-653e-47ac-82e1-4a943330d604",
+                  "questStatus": "NONE",
+                  "ignoreNPC": false
+                }
+              ],
+              "rewards": [
+                {
+                  "type": "quest",
+                  "text": {
+                    "pairs": [
+                      {
+                        "language": "English",
+                        "text": ""
+                      }
+                    ]
+                  },
+                  "grantDelay": null,
+                  "grantDelayApplyWhenInterrupted": false,
+                  "id": "440ca8a0-653e-47ac-82e1-4a943330d604"
+                }
+              ],
+              "dialogue": "fe8ca7e0-3304-4131-8b40-940816e61af9",
+              "vendor": 0,
+              "quest": "440ca8a0-653e-47ac-82e1-4a943330d604",
+              "text": {
+                "pairs": [
+                  {
+                    "language": "English",
+                    "text": "I want to help you (Start a quest)"
+                  }
+                ]
+              }
+            },
+            {
+              "conditions": [
+                {
+                  "type": "quest",
+                  "text": {
+                    "pairs": [
+                      {
+                        "language": "English",
+                        "text": ""
+                      }
+                    ]
+                  },
+                  "shouldReset": false,
+                  "uiRequirementIndicies": "",
+                  "logic": "EQUAL",
+                  "questId": "440ca8a0-653e-47ac-82e1-4a943330d604",
+                  "questStatus": "ACTIVE",
+                  "ignoreNPC": false
+                }
+              ],
+              "rewards": [],
+              "dialogue": "2a4118d9-bc69-4a79-82fe-31c6e0975604",
+              "vendor": 0,
+              "quest": 0,
+              "text": {
+                "pairs": [
+                  {
+                    "language": "English",
+                    "text": "What should I do? (Quest is active, not completed)"
+                  }
+                ]
+              }
+            },
+            {
+              "conditions": [
+                {
+                  "type": "quest",
+                  "text": {
+                    "pairs": [
+                      {
+                        "language": "English",
+                        "text": ""
+                      }
+                    ]
+                  },
+                  "shouldReset": true,
+                  "uiRequirementIndicies": "",
+                  "logic": "EQUAL",
+                  "questId": "440ca8a0-653e-47ac-82e1-4a943330d604",
+                  "questStatus": "READY",
+                  "ignoreNPC": false
+                }
+              ],
+              "rewards": [],
+              "dialogue": "977de2d6-4364-4b82-b5c7-0f54e047f41e",
+              "vendor": 0,
+              "quest": "440ca8a0-653e-47ac-82e1-4a943330d604",
+              "text": {
+                "pairs": [
+                  {
+                    "language": "English",
+                    "text": "Take these sticks (Complete a quest)"
+                  }
+                ]
+              }
+            },
+            {
+              "conditions": [
+                {
+                  "type": "quest",
+                  "text": {
+                    "pairs": [
+                      {
+                        "language": "English",
+                        "text": ""
+                      }
+                    ]
+                  },
+                  "shouldReset": true,
+                  "uiRequirementIndicies": "",
+                  "logic": "EQUAL",
+                  "questId": "440ca8a0-653e-47ac-82e1-4a943330d604",
+                  "questStatus": "ACTIVE",
+                  "ignoreNPC": false
+                }
+              ],
+              "rewards": [],
+              "dialogue": "8fc64b2e-885f-4ba8-a8a5-9f90448b4f02",
+              "vendor": 0,
+              "quest": 0,
+              "text": {
+                "pairs": [
+                  {
+                    "language": "English",
+                    "text": "I've changed my mind. (Abandon a quest)"
+                  }
+                ]
+              }
+            },
+            {
+              "conditions": [],
+              "rewards": [],
+              "dialogue": 0,
+              "vendor": 0,
+              "quest": 0,
+              "text": {
+                "pairs": [
+                  {
+                    "language": "English",
+                    "text": "Goodbye!"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "asset",
+        "guid": "1ada0611-5529-4f85-8073-beb13d99e106",
+        "asset": {
+          "type": "npc/dialogue",
+          "guid": "fe8ca7e0-3304-4131-8b40-940816e61af9",
+          "id": 2000,
+          "name": "Quest Started",
+          "editorComment": null,
+          "assetBundleVersion": 5,
+          "editorMarker": "None",
+          "unityBundleLocation": "",
+          "excludeFromMasterBundle": false,
+          "enableShaderConsolidation": null,
+          "ignoreNPOT": false,
+          "ignoreTexRW": false,
+          "bypassIdLimit": false,
+          "masterBundleOverride": "",
+          "bundleOverridePath": "",
+          "messages": [
+            {
+              "conditions": [],
+              "rewards": [],
+              "pages": [
+                {
+                  "text": {
+                    "pairs": [
+                      {
+                        "language": "English",
+                        "text": "Good luck on your quest!"
+                      }
+                    ]
+                  },
+                  "conditions": [],
+                  "rewards": []
+                }
+              ],
+              "prev": 0,
+              "faceOverride": null,
+              "visibleResponses": [],
+              "showNoResponses": false
+            }
+          ],
+          "responses": []
+        }
+      },
+      {
+        "type": "asset",
+        "guid": "80aea083-56d1-4b44-a633-659ac5c21bcc",
+        "asset": {
+          "type": "npc/dialogue",
+          "guid": "2a4118d9-bc69-4a79-82fe-31c6e0975604",
+          "id": 2012,
+          "name": "Quest Active",
+          "editorComment": null,
+          "assetBundleVersion": 5,
+          "editorMarker": "None",
+          "unityBundleLocation": "",
+          "excludeFromMasterBundle": false,
+          "enableShaderConsolidation": null,
+          "ignoreNPOT": false,
+          "ignoreTexRW": false,
+          "bypassIdLimit": false,
+          "masterBundleOverride": "",
+          "bundleOverridePath": "",
+          "messages": [
+            {
+              "conditions": [],
+              "rewards": [],
+              "pages": [
+                {
+                  "text": {
+                    "pairs": [
+                      {
+                        "language": "English",
+                        "text": "You have to get five sticks."
+                      }
+                    ]
+                  },
+                  "conditions": [],
+                  "rewards": []
+                }
+              ],
+              "prev": "a72ceffd-ac71-45e8-8b31-8aa8a4a2c0f7",
+              "faceOverride": null,
+              "visibleResponses": [],
+              "showNoResponses": false
+            }
+          ],
+          "responses": []
+        }
+      },
+      {
+        "type": "asset",
+        "guid": "9ba3007b-ba8e-451f-b3b9-ca8775eb1045",
+        "asset": {
+          "type": "npc/dialogue",
+          "guid": "8fc64b2e-885f-4ba8-a8a5-9f90448b4f02",
+          "id": 2013,
+          "name": "Quest Abandon",
+          "editorComment": null,
+          "assetBundleVersion": 5,
+          "editorMarker": "None",
+          "unityBundleLocation": "",
+          "excludeFromMasterBundle": false,
+          "enableShaderConsolidation": null,
+          "ignoreNPOT": false,
+          "ignoreTexRW": false,
+          "bypassIdLimit": false,
+          "masterBundleOverride": "",
+          "bundleOverridePath": "",
+          "messages": [
+            {
+              "conditions": [],
+              "rewards": [],
+              "pages": [
+                {
+                  "text": {
+                    "pairs": [
+                      {
+                        "language": "English",
+                        "text": "Oh, fine."
+                      }
+                    ]
+                  },
+                  "conditions": [],
+                  "rewards": []
+                }
+              ],
+              "prev": "a72ceffd-ac71-45e8-8b31-8aa8a4a2c0f7",
+              "faceOverride": null,
+              "visibleResponses": [],
+              "showNoResponses": false
+            }
+          ],
+          "responses": []
+        }
+      },
+      {
+        "type": "asset",
+        "guid": "3df5dcd9-b678-4c89-b5c4-8edc20615e05",
+        "asset": {
+          "type": "npc/dialogue",
+          "guid": "977de2d6-4364-4b82-b5c7-0f54e047f41e",
+          "id": 2015,
+          "name": "Quest Completed",
+          "editorComment": null,
+          "assetBundleVersion": 5,
+          "editorMarker": "None",
+          "unityBundleLocation": "",
+          "excludeFromMasterBundle": false,
+          "enableShaderConsolidation": null,
+          "ignoreNPOT": false,
+          "ignoreTexRW": false,
+          "bypassIdLimit": false,
+          "masterBundleOverride": "",
+          "bundleOverridePath": "",
+          "messages": [
+            {
+              "conditions": [],
+              "rewards": [],
+              "pages": [
+                {
+                  "text": {
+                    "pairs": [
+                      {
+                        "language": "English",
+                        "text": "Good job!"
+                      }
+                    ]
+                  },
+                  "conditions": [],
+                  "rewards": []
+                }
+              ],
+              "prev": 0,
+              "faceOverride": null,
+              "visibleResponses": [],
+              "showNoResponses": false
+            }
+          ],
+          "responses": []
+        }
+      }
+    ]
+  }
+}
